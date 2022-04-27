@@ -1,16 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 body {
   align-items: center;
   background-color: #fcffe7;
   display: flex;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Indie Flower", cursive;
   font-size: 12px;
   min-height: 100vh;
 }
@@ -21,7 +15,7 @@ body {
   box-shadow: 0 0 20px 7px #e0d8b0, inset 0 0 20px 2px #e0d8b0;
   height: 30rem;
   margin: 50px auto;
-  padding: 2.5rem;
+  padding: 2rem;
   position: relative;
   width: 30rem;
 }
@@ -55,24 +49,36 @@ body {
 }
 
 .clock .number {
-  --rotation: 0;
   color: #dea057;
   font-size: 28px;
-  height: 100%;
   position: absolute;
   text-align: center;
-  transform: rotate(var(--rotation));
-  width: 100%;
 }
 
 .clock .number3 {
-  --rotation: 90deg;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  margin-right: -14px;
 }
 
 .clock .number6 {
-  --rotation: 180deg;
+  bottom: 0;
+  left: 50%;
+  margin-left: -8px;
+  margin-bottom: -38px;
+}
+
+.clock .number12 {
+  top: 0;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -28px;
 }
 
 .clock .number9 {
-  --rotation: 270deg;
+  left: 0;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -14px;
 }
