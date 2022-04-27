@@ -15,3 +15,31 @@ body {
   padding: 2.5rem;
   width: 30rem;
 }
+
+.clock-face {
+  height: 100%;
+  transform: translateY(-3px);
+}
+
+.hand {
+  background: #dea057;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.41, -0.07, 0.13, 1.25);
+}
+
+.hour-hand {
+  height: 5px;
+}
+
+.minutes-hand {
+  height: 3px;
+}
+
+.seconds-hand {
+  height: 2px;
+}
