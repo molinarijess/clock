@@ -1,0 +1,17 @@
+body {
+  align-items: center;
+  background-color: #fcffe7;
+  display: flex;
+  font-size: 12px;
+  min-height: 100vh;
+}
+
+.clock {
+  border: 15px solid #ce9461;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 7px #e0d8b0, inset 0 0 20px 2px #e0d8b0;
+  height: 30rem;
+  margin: 50px auto;
+  padding: 2.5rem;
+  width: 30rem;
+}
