@@ -1,7 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   align-items: center;
   background-color: #fcffe7;
   display: flex;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 12px;
   min-height: 100vh;
 }
@@ -13,6 +22,7 @@ body {
   height: 30rem;
   margin: 50px auto;
   padding: 2.5rem;
+  position: relative;
   width: 30rem;
 }
 
@@ -42,4 +52,27 @@ body {
 
 .seconds-hand {
   height: 2px;
+}
+
+.clock .number {
+  --rotation: 0;
+  color: #dea057;
+  font-size: 28px;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  width: 100%;
+}
+
+.clock .number3 {
+  --rotation: 90deg;
+}
+
+.clock .number6 {
+  --rotation: 180deg;
+}
+
+.clock .number9 {
+  --rotation: 270deg;
 }
